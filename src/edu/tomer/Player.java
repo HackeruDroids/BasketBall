@@ -6,7 +6,7 @@ package edu.tomer;
 public class Player {
     private String name;
     private int pctFromTheField;
-    private int score = 0;
+    protected int score = 0;
 
     /*
     * Constructors
