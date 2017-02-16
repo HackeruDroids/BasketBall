@@ -36,6 +36,13 @@ public class Team {
         }
     }
 
+    public boolean shoot(){
+        int playerCount = players.size();
+        int randomPlayerIndex = RandomUtils.getInt(0, playerCount - 1);
+        Player p = players.get(randomPlayerIndex);
+        return p.shootFromTwo();
+    }
+
     public void printPlayers(){
         System.out.println(players);
     }

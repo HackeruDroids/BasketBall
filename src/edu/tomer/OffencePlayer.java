@@ -23,12 +23,14 @@ public class OffencePlayer extends Player {
         this.pctFromThree = pctFromThree;
     }
 
-    public boolean shootFromThree(){
+    public boolean shootFromThree() {
         int shoot = RandomUtils.getInt(0, 100);
-        if (shoot<=pctFromThree){
+        if (shoot <= pctFromThree) {
             score += 3; //protected accessible with inheritance
+            System.out.println(this.name + " Scored from three!");
             return true;
         }
+        System.out.println(this.name + " Failed from three...");
         return false;
     }
 }

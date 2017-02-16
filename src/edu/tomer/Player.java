@@ -4,8 +4,8 @@ package edu.tomer;
  * Created by hackeru on 16/02/2017.
  */
 public class Player {
-    private String name;
-    private int pctFromTheField;
+    protected String name;
+    protected int pctFromTheField;
     protected int score = 0;
 
     /*
@@ -28,8 +28,10 @@ public class Player {
         int shoot = RandomUtils.getInt(0, 100);
         if (shoot <= pctFromTheField) {
             score += 2;
+            System.out.println(this.name + " Scored from two!");
             return true;
         }
+        System.out.println(this.name + " Failed from two...");
         return false;
     }
 
