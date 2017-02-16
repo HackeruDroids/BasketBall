@@ -6,6 +6,13 @@ package edu.tomer;
 public class OffencePlayer extends Player {
     private int pctFromThree;
 
+    @Override
+    public String toString() {
+        return "OffencePlayer{" +
+                "pctFromThree=" + pctFromThree +
+                "} " + super.toString();
+    }
+
     public OffencePlayer() {
         super();
         this.pctFromThree = IO.getInt("Enter pct from 3:");

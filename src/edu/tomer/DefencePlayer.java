@@ -22,5 +22,10 @@ public class DefencePlayer extends Player {
         System.out.println("Tackled");
     }
 
-
+    @Override
+    public String toString() {
+        return "DefencePlayer{" +
+                "numOfFouls=" + numOfFouls +
+                "} " + super.toString();
+    }
 }
